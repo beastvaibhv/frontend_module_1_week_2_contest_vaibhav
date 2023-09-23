@@ -1,0 +1,327 @@
+/* Body*/
+body{
+font-family: Arial;
+margin:0;
+padding: 0;
+}
+a{
+    text-decoration-line: none;
+    cursor: pointer;
+}
+/* Body*/
+header{
+    padding: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items:center;
+}
+/* For logo*/
+.logo{
+    display: flex;
+    padding: 5px;
+
+
+}
+.logo>a{
+    
+    padding-left:10px;
+    padding-top:10px;
+    margin-top:10px;
+    font-size:500;
+}
+.logo>a>h3{
+    margin:0px;
+    border-left:1px solid black;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight:200;
+}
+/* nav bar*/
+.left-header{
+    display: flex;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight:200;
+    align-items: center;
+}
+li{
+    padding-top:5px;
+    padding-right:25px;
+}
+li>a>img{
+    padding-right: 10px;
+}
+.quote>button{
+    background-color: darkslategrey;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size:26px;
+    border-radius: 15px;
+    padding-left:20px; 
+    padding-right:20px; 
+    box-shadow: 2px 2px 2px grey;;
+}
+
+/* */
+/* Hero Section*/
+.hero-section, .footer-section{
+    background: linear-gradient(to right, #a4b3b3,#72b4b8,#3e9fa4,#07a2aa, #088fb8);
+    min-height: 80vh;
+    /* Adjust for margins */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    border-radius:40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Heading and search bar*/
+.left{
+    padding:50px 120px 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+}
+.hero-section-heading{
+    font-size: 36px;
+    text-align: start;
+}
+/* Hero/footer Section Image*/
+.right{
+
+    padding:50px 120px 50px;
+}
+/* Hero Section search container*/
+.search-container{
+
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   margin:0px;
+   min-width: 400px;
+   
+}
+.search-container>img{
+    background-color: white;
+    width:40px;
+    padding:10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.search-container>input{
+    height:40px;
+    width:200px;
+    min-width: 200px;
+    padding:10px;
+    border:none;
+}
+.search-container>button{
+height: 60px;
+padding: 10px;
+font-size:medium;
+font-weight:bold;
+width:100px;
+background-color: darkslateblue;
+color:white;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+/* Hero Section list*/
+
+.hero-section-list{
+    width:fit-content;
+    margin-top: 10px;
+}
+.hero-section-list> ul{
+    padding-left: 5px;
+    color:darkblue;
+}
+.hero-section-list> ul >li{
+    margin-top: 20px;
+    margin-left:0px;
+    padding-left: 0px;
+}
+/* */
+/* */
+/* Latest-Blog Section*/
+.latest-blog{
+    background-color: rgba(234, 234, 231, 0.833);
+    
+    
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.10);
+    
+}
+/* Latest blog image section*/
+.latest-blog-img {
+    height: 500px;
+    min-height: 300px;
+    max-width:600px;
+    padding: 20px;
+  
+    margin-bottom:10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.33% - 20px);
+}
+
+.latest-blog-img > img {
+    border-radius: 20px; 
+   
+}
+/* Latest blog Article Section*/
+.latest-blog-article{
+    max-width: 800px ;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width:33%;
+    flex-basis: calc(33.33% - 20px);
+}
+.latest-blog-article>h2{
+    text-align: center;
+      padding:20px;
+      font-size: 28px;
+}
+.para{
+   min-width: 300px;
+}
+.info{
+    display: flex;
+    padding:15px;
+    justify-content: space-between;
+    color:grey;
+}
+
+
+/* */
+
+/* Other Blogs Section*/
+.other-blogs{
+    margin:20px;
+    margin-top: 40px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.other-blog{
+   background: linear-gradient(146deg, rgba(249, 247, 247, 0.1)0%, rgba(249, 247, 247, 0.4)100%);
+   min-width: 33%;
+   margin-top: 15px;
+   width: 500px;
+   border: 1px;
+   border-radius: 15px;
+   box-shadow: 0 0 4px lightslategrey;
+}
+/* Other Blog Section Image*/
+.other-blog-img{
+    
+    display: flex;
+    justify-content: center;
+}
+.other-blog-img> img{
+    width: 100%;
+    border-radius: 15px;
+}
+.other-blog-heading{
+text-align: center;
+padding: 15px;
+}
+.full{
+    padding:20px;
+    margin-top: 10px;
+    text-align: end;
+    font-size: 20px;
+}
+p{
+    text-align: justify;
+    padding: 15px;
+}
+
+/* */
+
+/* Footer Section*/
+.footer-section{
+    margin-top: 40px;
+    margin-bottom:40px;
+}
+.footer-section-heading{
+    line-height: 0.7;
+}
+.footer-section-heading>h3{
+    font-size: 36px;
+    font-weight: 100;
+
+}
+.footer-section-heading>h2{
+    font-size: 44px;
+}
+/* Footer Section Button*/
+.footer-section-button>button{
+   width:200px;
+   height: 40px;
+   color:white;
+   background: linear-gradient(to right,rgba(94, 94, 176, 0.731),rgb(105, 148, 105), rgba(65, 147, 65, 0.414));
+   border-radius:20px;
+   font-size: 24px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* Add your responsive CSS rules here */
+    .left {
+        padding: 50px 40px 50px;
+    }
+
+    .right {
+        padding: 50px 40px 50px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container > img {
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .search-container > input {
+        width: 100%;
+    }
+
+    .search-container > button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Add your responsive CSS rules here */
+    .left {
+        padding: 50px 20px 50px;
+    }
+
+    .right {
+        padding: 50px 20px 50px;
+    }
+}
