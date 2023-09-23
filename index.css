@@ -10,11 +10,15 @@ a{
 }
 /* Body*/
 header{
+    background-color: white;
     padding: 20px;
+    height:60px;
+    margin-bottom: 10px;
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
     position: sticky;
+    top:0;
     align-items:center;
 }
 /* For logo*/
@@ -111,20 +115,17 @@ li>a>img{
   width:auto;
    
 }
-.search-container>img{
-    background-color: white;
-    width:40px;
-    padding:10px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
+
 
 .search-container>input{
     height:40px;
     width:200px;
     min-width: 200px;
     padding:10px;
-    border:none;
+        border:none;
+    padding:10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .search-container>button{
 height: 60px;
@@ -136,8 +137,35 @@ background-color: darkslateblue;
 color:white;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
+cursor: pointer;
 }
+.search-container:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    
+  }
+@media screen and (max-width: 1200px) {
+    .left {
+        padding: 20px;
+        min-width: auto;
+    }
 
+    .search-container {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .search-container > input {
+    max-width:160px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+    .search-container>button{
+    max-width: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+}
 
 /* Hero Section list*/
 
@@ -175,7 +203,7 @@ border-bottom-right-radius: 20px;
     min-height: 300px;
     max-width:600px;
     padding: 20px;
-  
+    margin-right:150px;
     margin-bottom:10px;
     border-radius: 10px;
     display: flex;
@@ -216,11 +244,11 @@ border-bottom-right-radius: 20px;
 
 /* Other Blogs Section*/
 .other-blogs{
-    margin:20px;
+    margin:40px;
     margin-top: 40px;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .other-blog{
    background: linear-gradient(146deg, rgba(249, 247, 247, 0.1)0%, rgba(249, 247, 247, 0.4)100%);
@@ -283,7 +311,15 @@ p{
    border-radius:20px;
    font-size: 24px;
 }
-
+button:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#808080;
+  }
+button:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+  }
 
 @media screen and (max-width: 1200px) {
     /* Add your responsive CSS rules here */
