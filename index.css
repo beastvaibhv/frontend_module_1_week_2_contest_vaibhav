@@ -152,7 +152,7 @@ cursor: pointer;
     .search-container {
         display: flex;
         justify-content: start;
-        width: 100%;
+        width: 80vb;
     }
 
     .search-container > input {
@@ -162,6 +162,8 @@ cursor: pointer;
     }
     .search-container>button{
     max-width: 80px;
+    max-height:40px;
+    align-items: center;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     }
