@@ -6,6 +6,7 @@ padding: 0;
 }
 a{
     text-decoration-line: none;
+    color:black;
     cursor: pointer;
 }
 /* Body*/
@@ -19,7 +20,7 @@ header{
     justify-content: space-between;
     position: sticky;
     top:0;
-    align-items:center;
+    align-items: center;
 }
 /* For logo*/
 .logo{
@@ -31,8 +32,8 @@ header{
 .logo>a{
     
     padding-left:10px;
-    padding-top:10px;
-    margin-top:10px;
+    padding-top:20px;
+    margin-top:20px;
     font-size:500;
 }
 .logo>a>h3{
