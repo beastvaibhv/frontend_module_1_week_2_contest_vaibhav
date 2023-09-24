@@ -6,6 +6,7 @@ padding: 0;
 }
 a{
     text-decoration-line: none;
+    color: black;
     cursor: pointer;
 }
 /* Body*/
@@ -24,6 +25,7 @@ header{
 /* For logo*/
 .logo{
     display: flex;
+    align-items: center;
     padding: 5px;
 
 
@@ -38,7 +40,7 @@ header{
 .logo>a>h3{
     margin:0px;
     border-left:1px solid black;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 24px;
     font-weight:200;
 }
@@ -90,7 +92,9 @@ li>a>img{
 /* Heading and search bar*/
 .left{
     padding:50px 120px 50px;
-   
+    display: flex;
+    flex-direction:column;
+    align-items: start;
    
 }
 .hero-section-heading{
@@ -106,34 +110,31 @@ li>a>img{
 .search-container{
 
    display:flex;
-   overflow: hidden;
+   justify-content: center;
+   align-items: center;
    height: 40px;
-   margin:20px 0px;
-   width: 540px;
-  height:auto;
+   margin:0px;
+  width:auto;
    
 }
 
 
-.hero-input{
-    flex:2;
-    font-size: 20px;
+.search-container>input{
     height:40px;
+    width:200px;
+    min-width: 200px;
     padding:10px;
-    border:none;
+        border:none;
     padding:10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    outline:none;
 }
-.hero-btn{
-flex:1;
-border:none;
+.search-container>button{
 height: 60px;
-padding: 25px 10px;
+padding: 10px;
 font-size:medium;
 font-weight:bold;
-width:auto;
+width:100px;
 background-color: darkslateblue;
 color:white;
 border-top-right-radius: 20px;
@@ -144,21 +145,29 @@ cursor: pointer;
     box-shadow: 1px 1px 8px 1px #dcdcdc;
     
   }
-@media screen and (max-width: 110px) {
-    .search-container{
-        width: 80vw;
+@media screen and (max-width: 1200px) {
+    .left {
+        padding: 20px;
+        min-width: auto;
     }
-    .left{
-        flex-direction: column;
-        align-items: center;
+
+    .search-container {
+        display: flex;
+        justify-content: start;
+        width: 80vb;
     }
-    .hero-input{
-        flex:3;
+
+    .search-container > input {
+    max-width:160px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     }
-    .hero-btn{
-    flex:1;
+    .search-container>button{
+    max-width: 80px;
+    max-height:30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     }
-     
 }
 
 /* Hero Section list*/
